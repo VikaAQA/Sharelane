@@ -6,13 +6,7 @@ import org.testng.annotations.Test;
 
 public class ZipCodeTest {
 
-    /*
-    1.Открыть браузер Chrome
-    2.В браузере открыть страницу
-    3.
-     */
-
- @Test
+    @Test
     public void test() {
      System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");//устанавливаем Path переменную
      WebDriver browser= new ChromeDriver();// создание экземляр класса ChromeDriver
