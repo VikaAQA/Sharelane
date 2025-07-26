@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.time.Instant;
 
 public class ZipCodeTest {
 
@@ -21,6 +22,7 @@ public class ZipCodeTest {
      WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("error_message")));
      String errorMessage = errorElement.getText();
      Assert.assertEquals(errorMessage,"Oops, error on page. ZIP code should have 5 digits");
+
      browser.quit();
     }
 
@@ -33,6 +35,7 @@ public class ZipCodeTest {
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
         WebElement registerButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[value='Register']")));
         Assert.assertTrue(registerButton.isDisplayed(), "Кнопка 'Register' не отображается на странице");
+
         browser.quit();
     }
 }
