@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# IntelliJ IDEA project files
+.idea/
+# Maven/SBT build output
+target/
+# Log files
+*.log
+
